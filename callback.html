@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callback</title>
+</head>
+<body>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.body.textContent = params.get('code') || 'OK';
+  </script>
+</body>
+</html>
